@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - robotframework >=3.0
-    - paramiko >=1.15.0
+    - paramiko >=1.15.3
 
 test:
   imports:
