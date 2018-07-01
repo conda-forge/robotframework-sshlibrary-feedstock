@@ -1,6 +1,6 @@
 {% set name = "robotframework-sshlibrary" %}
-{% set version = "3.0.0" %}
-{% set sha256 = "2a266bdcc2854fec8b40baf968e02b996e069964ae4b1ae84501c2f396a02276" %}
+{% set version = "3.1.0" %}
+{% set sha256 = "7618dace92a51511151bbc7b0c98c68092f6b985c80bf590dbb62eb1472ba494" %}
 
 package:
   name: {{ name }}
@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - robotframework >=3.0
-    - paramiko >=1.15.0
+    - paramiko >=1.15.3
 
 test:
   imports:
