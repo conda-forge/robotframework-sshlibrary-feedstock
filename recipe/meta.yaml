@@ -1,6 +1,6 @@
 {% set name = "robotframework-sshlibrary" %}
-{% set version = "3.1.1" %}
-{% set sha256 = "9d2ef11485ea15442e2852b9408150d5bbbdc2a32975f2e6d9a6ad028cfec217" %}
+{% set version = "3.2.0" %}
+{% set sha256 = "2557b5cea33fd46609e7c35c093cd152ad409120bf7705b8a76d9d5c648d578a" %}
 
 package:
   name: {{ name }}
