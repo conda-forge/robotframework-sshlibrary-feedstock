@@ -1,6 +1,6 @@
 {% set name = "robotframework-sshlibrary" %}
-{% set version = "3.2.1" %}
-{% set sha256 = "55b9c5a13e803f6fa2cb316ce9c33c503690556a88fb991eb70ae1d2d554ca33" %}
+{% set version = "3.3.0" %}
+{% set sha256 = "fc5b5db63cf63a937bd4ada1a8b7508ec8a75d9454fa75e6410cbe72fd718de9" %}
 
 package:
   name: {{ name }}
@@ -18,19 +18,20 @@ build:
 
 requirements:
   build:
-    - python
     - pip
+    - python
   run:
+    - paramiko >=1.15.3
     - python
     - robotframework >=3.0
-    - paramiko >=1.15.3
+    - scp >=0.13.0
 
 test:
   imports:
     - SSHLibrary
 
 about:
-  home: https://github.com/robotframework/SSHLibrary
+  home: https://robotframework.org/SSHLibrary
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
@@ -49,6 +50,7 @@ about:
     - Ensuring that files and directories exist on the remote machine.
   doc_url: http://robotframework.org/SSHLibrary/SSHLibrary.html
   dev_url: https://github.com/robotframework/SSHLibrary
+  doc_source_url: https://github.com/robotframework/SSHLibrary/blob/master/docs/SSHLibrary-{{ version }}.rst
 
 extra:
   recipe-maintainers:
