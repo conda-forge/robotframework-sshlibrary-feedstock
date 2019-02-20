@@ -5,7 +5,7 @@
 About robotframework-sshlibrary
 ===============================
 
-Home: https://github.com/robotframework/SSHLibrary
+Home: https://robotframework.org/SSHLibrary
 
 Package license: Apache-2.0
 
