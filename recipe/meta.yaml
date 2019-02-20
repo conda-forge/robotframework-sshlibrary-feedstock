@@ -31,7 +31,7 @@ test:
     - SSHLibrary
 
 about:
-  home: https://github.com/robotframework/SSHLibrary
+  home: https://robotframework.org/SSHLibrary
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
@@ -50,6 +50,7 @@ about:
     - Ensuring that files and directories exist on the remote machine.
   doc_url: http://robotframework.org/SSHLibrary/SSHLibrary.html
   dev_url: https://github.com/robotframework/SSHLibrary
+  doc_source_url: https://github.com/robotframework/SSHLibrary/blob/master/docs/SSHLibrary-{{ version }}.rst
 
 extra:
   recipe-maintainers:
