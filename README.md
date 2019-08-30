@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About robotframework-sshlibrary
 ===============================
 
@@ -29,8 +25,15 @@ The library has the following main usages:
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/robotframework-sshlibrary-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/robotframework-sshlibrary-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4302&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/robotframework-sshlibrary-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
