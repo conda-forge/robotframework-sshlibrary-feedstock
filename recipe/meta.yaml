@@ -1,5 +1,5 @@
 {% set name = "robotframework-sshlibrary" %}
-{% set version = "3.4.0" %}
+{% set version = "3.5.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 21fa0183776e6061366f517765db479aaa634b707f3dd9d90ef6972adae6a755
+  sha256: 0612e7d89f39120b4eefbe4790926dd9944bdd12e35340a47d345cca5105fa48
 
 build:
   noarch: python
