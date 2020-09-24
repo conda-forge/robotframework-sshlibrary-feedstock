@@ -1,5 +1,5 @@
 {% set name = "robotframework-sshlibrary" %}
-{% set version = "3.5.0" %}
+{% set version = "3.5.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0612e7d89f39120b4eefbe4790926dd9944bdd12e35340a47d345cca5105fa48
+  sha256: 843af44722d1d4e39f616e5441d6f49e82202cd1a8cc9d16637a6475a8ecb023
 
 build:
   noarch: python
@@ -25,14 +25,20 @@ requirements:
     - scp >=0.13.0
 
 test:
+  requires:
+    - pip
   imports:
     - SSHLibrary
+  commands:
+    - python -m pip check
 
 about:
   home: https://robotframework.org/SSHLibrary
   license: Apache-2.0
   license_family: Apache
-  license_file: LICENSE.txt
+  license_file: 
+    - LICENSE.txt
+    - COPYRIGHT.txt
   summary: Robot Framework test library for SSH and SFTP
   description: |
     SSHLibrary is operating system independent and supports Python 2.7 as well
