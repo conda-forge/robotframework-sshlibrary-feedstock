@@ -25,14 +25,20 @@ requirements:
     - scp >=0.13.0
 
 test:
+  requires:
+    - pip
   imports:
     - SSHLibrary
+  commands:
+    - python -m pip check
 
 about:
   home: https://robotframework.org/SSHLibrary
   license: Apache-2.0
   license_family: Apache
-  license_file: LICENSE.txt
+  license_file: 
+    - LICENSE.txt
+    - COPYRIGHT.txt
   summary: Robot Framework test library for SSH and SFTP
   description: |
     SSHLibrary is operating system independent and supports Python 2.7 as well
