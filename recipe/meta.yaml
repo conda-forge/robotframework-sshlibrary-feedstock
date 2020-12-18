@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
   run:
     - paramiko >=1.15.3
-    - python
+    - python >=2.7
     - robotframework >=3.0
     - scp >=0.13.0
 
@@ -30,7 +30,7 @@ test:
   imports:
     - SSHLibrary
   commands:
-    - python -m pip check
+    - pip check
 
 about:
   home: https://robotframework.org/SSHLibrary
