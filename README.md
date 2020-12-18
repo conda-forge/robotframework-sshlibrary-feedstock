@@ -5,9 +5,13 @@ Home: https://robotframework.org/SSHLibrary
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/robotframework-sshlibrary-feedstock/blob/master/LICENSE.txt)
 
 Summary: Robot Framework test library for SSH and SFTP
+
+Development: https://github.com/robotframework/SSHLibrary
+
+Documentation: http://robotframework.org/SSHLibrary/SSHLibrary.html
 
 SSHLibrary is operating system independent and supports Python 2.7 as well
 as Python 3.4 or newer. In addition to the normal Python interpreter, it
