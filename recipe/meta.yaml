@@ -1,23 +1,24 @@
-{% set name = "robotframework-sshlibrary" %}
 {% set version = "3.8.0" %}
 
 package:
-  name: {{ name }}
+  name: robotframework-sshlibrary
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/r/robotframework-sshlibrary/robotframework-sshlibrary-{{ version }}.tar.gz
   sha256: aedf8a02bcb7344404cf8575d0ada25d6c7dc2fcb65de2113c4e07c63d2446c2
 
 build:
-  noarch: python
   number: 1
-  script: {{ PYTHON }} -m pip install --no-deps -vv .
+  noarch: python
+  script:
+    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - paramiko >=1.15.3
     - python >={{ python_min }}
